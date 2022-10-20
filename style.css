@@ -1,0 +1,158 @@
+
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+.main-container{
+    width: 1200px;
+    height: 600px;
+    margin: 40px auto;
+    background-color: rgba(255, 127, 80, 0.861);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    box-sizing: border-box;
+    z-index: 0;
+    position: relative;
+}
+
+
+
+
+.card-content{
+    width: 50%;
+    height: 100%;
+    background-color: aqua;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+}
+.save-date{
+    width: 50%;
+    height: 100%;
+    background-color: rgb(0, 68, 255);
+    position: absolute;
+    right: 0;
+    z-index: 0;
+}
+
+.groom-container{
+    width: 200px;
+    height: 400px;
+    background-color: rgb(85, 165, 42);
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    z-index: 3;
+}
+
+
+.one-more{
+    width: 70px;
+    height: 150px;
+    /* background-color: rgba(137, 43, 226, 0.52); */
+    /* margin: 5px; */
+    /* margin-bottom: 0; */
+    position: relative;
+    /* background-image: url(5.jfif); */
+    background-size: cover;
+    background-position: right;
+    /* z-index: 0; */
+}
+
+.man{
+    width: 80px;
+    height: 150px;
+    /* background-color: rgba(137, 43, 226, 0.52); */
+    margin: 5px;
+    margin-bottom: 0;
+    position: absolute;
+    /* left: 500px; */
+    background-image: url(5.jfif);
+    background-size: cover;
+    z-index: 1;
+}
+
+.woman{
+    width: 70px;
+    height: 150px;
+    /* background-color: rgba(137, 43, 226, 0.52); */
+    margin: 5px;
+    margin-bottom: 0;
+    position: relative;
+    background-image: url(5.jfif);
+    background-size: cover;
+    background-position: right;
+    /* z-index: 0; */
+
+}
+
+.box{
+    width: 50px;
+    height: 50px;
+    background-color: coral;
+    margin: 0 20px;
+    margin-bottom: 20px;
+    z-index: 10;
+    position: absolute;
+    bottom:0;
+    
+}
+
+.animation{
+    animation-name: move;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    /* animation-iteration-count: infinite; */
+}
+@keyframes move {
+    from{
+        left: 0px;
+        /* bottom: 0px; */
+    }
+    to {
+        left: 470px;
+        /* bottom: 0px; */
+        /* padding: 40px; */
+    }
+}
+
+.animation-back{
+    animation-name: moveback;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    /* animation-iteration-count: infinite; */
+}
+@keyframes moveback {
+    from {
+        left: 470px;
+        /* bottom: 0px; */
+        /* padding: 40px; */
+    }
+    to{
+        left: 0px;
+        /* bottom: 0px; */
+    }
+    
+}
+
+
+/* .top-img:hover{
+    animation-name: car-hover;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+
+    @keyframes car-hover {
+            
+        to{
+                width: 350px;
+                height: 500px;
+                background-color: blueviolet;
+                z-index: -1;
+            }
+
+    } */
